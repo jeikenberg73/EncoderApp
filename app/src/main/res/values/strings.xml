@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EncoderApp</string>
+    <string name="title">Encoder Decoder</string>
+    <string name="stringToEncode">Enter a string to encode</string>
+    <string name="encodeDecodeBtn">Encode String</string>
+    <string name="encodedLabel">Encoded String</string>
+    <string name="decodedLabel">Decoded String</string>
+</resources>
