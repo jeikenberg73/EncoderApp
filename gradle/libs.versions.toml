@@ -11,9 +11,7 @@ composeBom = "2024.11.00"
 appcompat = "1.7.0"
 material = "1.12.0"
 hilt = "2.51.1"
-hiltNavigation = "1.2.0"
 ksp = "2.1.0-1.0.29"
-kspCompiler = "2.53"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,9 +32,6 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
-hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
-ksp = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "kspCompiler"}
-hilt-gradle-plugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -45,4 +40,5 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 android-library = { id = "com.android.library", version.ref = "agp" }
 hiltLibarary = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-kapt = { id = "kotlin-kapt" }
 

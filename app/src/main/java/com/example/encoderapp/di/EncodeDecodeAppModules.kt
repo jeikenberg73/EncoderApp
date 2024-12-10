@@ -12,6 +12,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object EncodeDecodeModules {
 
+    // Need a module to inject the encoder decoder repository.
     @Provides
     @Singleton
     fun provideEncodeDecode() : EncodeDecodeRepository {

@@ -23,10 +23,7 @@ fun MainTopBar(
     title: String,
     modifier: Modifier = Modifier
 ) {
-    val colorStops = arrayOf(
-        0.0f to BlueGradiantBackgroundStart,
-        1.0f to BlueGradiantBackgroundStop
-    )
+    // Title bar layout
     TopAppBar(
         colors = TopAppBarDefaults.topAppBarColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer,
@@ -36,19 +33,6 @@ fun MainTopBar(
             Text(title)
         }
     )
-//    Column(
-//        modifier = modifier
-//            .background(Brush.verticalGradient(colorStops = colorStops)),
-//        verticalArrangement = Arrangement.Center
-//    ) {
-//        Text(
-//            text = title,
-//            fontSize = 24.sp,
-//            textAlign = TextAlign.Center,
-//            color = Color.White,
-//            modifier = modifier
-//        )
-//    }
 }
 
 @Preview(showBackground = true)

@@ -29,19 +29,31 @@ fun MainScreen(
     modifier: Modifier = Modifier,
     encodeDecodeViewModel: EncodeDecodeViewModel?
 ) {
+    /**
+     * This is the composable state string that holds the input string to be encoded.
+     */
     var stringToEncode: String by rememberSaveable {
         mutableStateOf("")
     }
 
+    /**
+     * This is the composable state string that holds the resulting decimal values that are a
+     * result of the encoding of the input string.
+     */
     var encodedString: String by rememberSaveable {
         mutableStateOf("")
     }
 
+    /**
+     * This is the composable state string that holds the resulting string after decoding the
+     * decimal values from the encoder.
+     */
     var decodedString: String by rememberSaveable {
         mutableStateOf("")
     }
 
     Scaffold(
+        // Title bar
         topBar = {
             MainTopBar(
                 title = stringResource(R.string.title)
@@ -49,12 +61,14 @@ fun MainScreen(
         },
         contentColor = MaterialTheme.colorScheme.primary
     ) { innerPadding ->
+        // Body
         Column(
             modifier = Modifier
                 .padding(innerPadding)
                 .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            // Input field
             TextField(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -65,6 +79,7 @@ fun MainScreen(
                 },
                 label = { Text(stringResource(R.string.stringToEncode)) }
             )
+            // Encoder Button
             Button(
                 modifier = Modifier
                     .padding(top = 8.dp),
@@ -82,6 +97,7 @@ fun MainScreen(
                     text = stringResource(R.string.encodeDecodeBtn)
                 )
             }
+            // Encoded decimal values
             TextField(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -91,6 +107,7 @@ fun MainScreen(
                 label = { Text(stringResource(R.string.encodedLabel)) },
                 enabled = false
             )
+            // Decoded string
             TextField(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -108,7 +125,6 @@ fun MainScreen(
 @Composable
 fun MainScreenPreview() {
     EncoderAppTheme {
-        val paddingValues = PaddingValues()
         MainScreen(
             modifier = Modifier,
             null

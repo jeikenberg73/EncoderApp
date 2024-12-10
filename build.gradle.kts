@@ -4,16 +4,8 @@ plugins {
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
     alias(libs.plugins.android.library) apply false
-    alias(libs.plugins.ksp) apply false
-    id("com.google.dagger.hilt.android") version "2.51.1" apply false
-//    alias(libs.plugins.hiltLibarary) apply false
-}
 
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-//        classpath(libs.hilt.gradle.plugin)
-    }
+    // Plugins needed to use Hilt
+    alias(libs.plugins.ksp) apply false
+    alias(libs.plugins.hiltLibarary) apply false
 }

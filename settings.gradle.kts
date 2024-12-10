@@ -19,6 +19,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "EncoderApp"
 include(":app")
+rootProject.name = "EncoderApp"
+
+// Include the encoder decoder library
 include(":EncodeDecode")
