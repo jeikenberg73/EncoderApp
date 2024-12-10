@@ -60,8 +60,8 @@ This project is to demonstrate the encoding and decoding of an input string.
 ### Usage
 
 1. Once the application has started, input a string in the top text field.
-2. Press "Endoe String"
-3. The decimal values representing the encoded binary string are displayed in the "Encoded String" feild.
+2. Press "Endode String"
+3. The decimal values representing the encoded binary string are displayed in the "Encoded String" field.
 4. The application then decodes the decimal values back to the original string and displays it in the "Decoded String" field.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
