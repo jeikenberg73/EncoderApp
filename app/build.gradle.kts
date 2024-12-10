@@ -65,20 +65,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
-
     // Hilt
-//    implementation(libs.ksp)
-//    ksp(libs.ksp)
-//    implementation(libs.hilt.android)
-//    implementation(libs.hilt.navigation)
-//    compileOnly(libs.hilt.compiler)
-//    kapt(libs.hilt.compiler)
-//    androidTestImplementation(libs.hilt.compiler)
-//    androidTestAnnotationProcessor(libs.hilt.compiler)
-//    testImplementation(libs.hilt.compiler)
-//    testAnnotationProcessor(libs.hilt.compiler)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
 }
 
 kapt {
